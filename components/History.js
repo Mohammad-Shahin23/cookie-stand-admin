@@ -55,7 +55,7 @@ export default function History({ infoList: formInfo , infodelete}) {
                 </thead>
                 <tbody className="bg-blue-300 ">
                     {formInfo.map(item => (
-                        <tr>
+                        <tr key = {item.id}>
                             
                             <td className="px-4 border border-black">{item.location}</td>
                             <td className="px-4 border border-black">{item.hourly_sales[0]}</td>
